@@ -1,0 +1,28 @@
+h2 {
+    font-family: sans-serif;
+}
+
+.schedule{
+    display: flex;
+    width: 70%;
+    border: 1px solid black;
+    margin: 0 auto;
+    padding: 20px;
+    justify-content: center;
+    gap: 5px;
+}
+
+.days{
+    margin: auto;
+    border: 0.5px solid black;
+    text-align: center;
+    width: 20%;
+    padding: 10px;
+}
+
+.event{
+    width: 60%;
+    border: 0.5px solid black;
+    padding: 20px;
+    margin: auto;
+}
