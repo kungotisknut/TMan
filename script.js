@@ -37,6 +37,8 @@ document.addEventListener("DOMContentLoaded", () =>{
                     newEvent.style.backgroundColor = color;
                     newEvent.style.fontFamily = "sans-serif"
 
+                    newEvent.style.cursor = "pointer";
+
                     newEvent.addEventListener("click", () => {
                         const confirmDelete = confirm("Do you want do delete this event?");
                         if(!confirmDelete) return;
