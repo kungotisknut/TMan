@@ -36,9 +36,24 @@ document.addEventListener("DOMContentLoaded", () =>{
                     newEvent.textContent = `${time} ${subject}`;
                     newEvent.style.backgroundColor = color;
                     newEvent.style.fontFamily = "sans-serif"
+
+                    newEvent.addEventListener("click", () => {
+                        const confirmDelete = confirm("Do you want do delete this event?");
+                        if(!confirmDelete) return;
+
+                        const index = savedEvents.findIndex(e => 
+                            e.day === day && e.time === time && e.subject === subject && e.color === color
+                        );
+                        if(index != -1){
+                            savedEvents.splice(index, 1);
+                            localStorage.setItem("events", JSON.stringify(savedEvents));
+                        }
+
+                        newEvent.remove();
+                    });
+
                     div.appendChild(newEvent);
                 }
             });
     }
-
 });
