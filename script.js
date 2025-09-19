@@ -1,3 +1,6 @@
+/* Copyright (c) 2025 Otis K
+All rights reserved. */
+
 document.addEventListener("DOMContentLoaded", () =>{
     const addEventBtn = document.getElementById("addEventBtn");
     const dayDivs = document.querySelectorAll(".days");
@@ -37,4 +40,5 @@ document.addEventListener("DOMContentLoaded", () =>{
                 }
             });
     }
+
 });
