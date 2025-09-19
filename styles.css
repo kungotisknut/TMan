@@ -1,3 +1,6 @@
+/* Copyright (c) 2025 Otis K
+All rights reserved. */
+
 h2 {
     font-family: sans-serif;
 }
@@ -25,4 +28,5 @@ h2 {
     border: 0.5px solid black;
     padding: 20px;
     margin: auto;
+
 }
